@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Random Complex Polygon Generator</title>
+    <meta name="description" content="Generate a random SVG polygon in real time">
+    <meta name="author" content="Cooper Labinger">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="app">
+      <p>
+        <svg viewBox="0 0 100 100">
+          <polygon :points="pointList" />
+        </svg>
+      </p>
+      <p>
+        Draw:
+        <button @click="toggleDraw">
+          {{ drawActive ? 'Stop' : 'Start' }}
+        </button>
+      </p>
+      <p>
+        Remove Random Points:
+        <button @click="toggleRemove">
+          {{ removeActive ? 'Stop' : 'Start' }}
+        </button>
+      </p>
+      <p>
+        <button @click="reset">
+          Reset
+        </button>
+      </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

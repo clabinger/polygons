@@ -1,0 +1,15 @@
+body {
+  font-family: sans-serif;  
+}
+
+p {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+svg {
+  border: 1px solid gray;
+  width: 500px;
+  max-width: 90%;
+}
